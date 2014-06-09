@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 14+ devices.
+    -->
+    <!-- res/values-v14/themes.xml -->
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionBar</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/actionBar</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <!-- Application No action bar theme. -->
+    <style name="AppThemeNoActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:actionBarStyle">@style/noActionBarTitle</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Support library compatibility -->
+        <item name="windowActionBar">false</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <!-- No Action Bar. -->
+
+    <style name="noActionBarTitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+    <!-- Action Bar. -->
+    <style name="actionBar" parent="android:Widget.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextStyle">@style/actionBarTitle</item>
+        <item name="android:actionOverflowButtonStyle">@style/actionBarOverflow</item>
+    </style>
+
+    <style name="actionBarTitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/bgDark</item>
+        <item name="android:fontFamily">sans-serif-normal</item>
+    </style>
+    <!-- Action Bar overflow -->
+    <style name="actionBarOverflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:background">@drawable/selector_menu_settings</item>
+    </style>
+
+    <!-- TextView time -->
+    <style name="textViewAlarmTime">
+        <item name="android:textSize">50sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/bgDark</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- TextView normal -->
+    <style name="textViewNormal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/bgDark</item>
+    </style>
+
+    <!-- EditText normal -->
+    <style name="editTextNormal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/bgDark</item>
+    </style>
+
+    <!-- Main buttons - add alarm, done, stop. -->
+    <style name="buttonMain" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_btn_main</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!-- Timepicker -->
+
+
+    <!--
+    <style name="timePicker" parent="android:Widget.AppCompat.TimePicker">
+        <item name="android:selectionDivider">@color/accentStrong</item>
+    </style>
+    -->
+
+
+    <!-- Buttons for music -->
+    <style name="buttonMusic" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_btn_music</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <!-- TextView time ringing fragment -->
+    <style name="textViewWakeupTime">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@color/greyLight</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/bgDark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Snooze button -->
+    <style name="buttonSnooze" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_btn_snooze</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">320dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

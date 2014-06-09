@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- styles.xml -->
+    <string name="app_name">mp3 alarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <!-- about.xml -->
+    <string name="app_version_credits">Version 1.0 beta \n \n Drop us a line at \n mp3alarmclock@gmail.com</string>
+    <string name="thank_you">Thank you for using mp3alarm!</string>
+
+    <!-- alarms_listview.xml -->
+    <string name="add_alarm">add alarm</string>
+
+    <!-- alarms_listview_alarm.xml -->
+    <string name="alarm_time">9:00</string>
+    <string name="dismiss_alarm">dismiss</string>
+    <string name="delete_alarm">delete</string>
+    <string name="alarm_name">wake up message</string>
+    <string name="alarm_music">Music</string>
+    <string name="monday"><u></u></string>
+    <string name="tuesday"><u></u></string>
+    <string name="wednesday"><u></u></string>
+    <string name="thursday"><u></u></string>
+    <string name="friday"><u></u></string>
+    <string name="saturday"><u></u></string>
+    <string name="sunday"><u></u></string>
+
+    <!-- fragment_add_alarm.xml -->
+    <string name="btn_add_music">music</string>
+    <string name="btn_add_record">record</string>
+    <string name="btn_play_record">play</string>
+    <string name="btn_alarm_ringtone">preview</string>
+    <string name="save_alarm">done</string>
+
+    <!-- ringing_alarm_fragment.xml -->
+    <string name="btn_stop_alarm">stop</string>
+    <string name="btn_snooze_alarm">snooze</string>
+
+</resources>

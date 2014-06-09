@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.mariyana.mp3alarmclock"
+    android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.mariyana.mp3alarmclock.view.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.mariyana.mp3alarmclock.view.activity.RingingAlarmActivity"
+            android:parentActivityName="net.mariyana.mp3alarmclock.view.activity.MainActivity"
+            android:theme="@style/AppThemeNoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.mariyana.mp3alarmclock.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.mariyana.mp3alarmclock.view.activity.AboutActivity"
+            android:parentActivityName="net.mariyana.mp3alarmclock.view.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.mariyana.mp3alarmclock.MainActivity" />
+        </activity>
+
+        <service
+            android:name="net.mariyana.mp3alarmclock.view.MediaPlayerService"
+            android:enabled="true"
+            android:permission="net.mariyana.mp3alarmclock.MY_SERVICE_PERMISSION" />
+
+        <receiver
+            android:name="net.mariyana.mp3alarmclock.view.PlayAlarmReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

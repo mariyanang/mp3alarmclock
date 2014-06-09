@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appthemeyellow_item_background_holo_light"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/container_time_onoff_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/view_vertical_margin" >
+
+        <CheckBox
+            android:id="@+id/btn_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_weight="0.20"
+            android:button="@drawable/selector_alarm_on_off"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/alarm_time"
+            style="@style/textViewAlarmTime"
+            android:layout_width="0dp"
+            android:layout_gravity="center|center"
+            android:layout_weight="3"
+            android:text="@string/alarm_time" />
+
+        <Button
+            android:id="@+id/btn_delete_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/selector_delete_alarm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_container_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_time_onoff_delete"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_mo_row"
+            android:clickable="false"
+            android:text="@string/monday" />
+
+        <CheckBox
+            android:id="@+id/tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_tu_row"
+            android:clickable="false"
+            android:text="@string/tuesday" />
+
+        <CheckBox
+            android:id="@+id/wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_we_row"
+            android:clickable="false"
+            android:text="@string/wednesday" />
+
+        <CheckBox
+            android:id="@+id/thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_th_row"
+            android:clickable="false"
+            android:text="@string/thursday" />
+
+        <CheckBox
+            android:id="@+id/friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_fr_row"
+            android:clickable="false"
+            android:text="@string/friday" />
+
+        <CheckBox
+            android:id="@+id/saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_sa_row"
+            android:clickable="false"
+            android:text="@string/saturday" />
+
+        <CheckBox
+            android:id="@+id/sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/selector_su_row"
+            android:clickable="false"
+            android:text="@string/sunday" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_name_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox_container_row"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+
+        <TextView
+            android:id="@+id/alarm_name"
+            style="@style/textViewNormal"
+            android:layout_gravity="left"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:paddingRight="20dp"
+            android:textColor="@color/greyLight" />
+
+        <TextView
+            android:id="@+id/alarm_music"
+            style="@style/textViewNormal"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/greyLight" />
+    </LinearLayout>
+
+</RelativeLayout>

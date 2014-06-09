@@ -1,0 +1,12 @@
+<resources>
+   <!-- Light app theme colors. -->
+   <color name="transparent">#80ffffff</color>
+	<color name = "white">#ffffff</color>
+	<color name = "black">#333333</color>
+	<color name ="greyLight">#B3B3B3</color>
+	<color name ="greyLighter">#d9d9d9</color>
+	<color name = "accentStrong">#FFD200</color>
+	<color name = "accentWeak">#ffe573</color>
+	<color name = "bgLight">#fffefd</color>
+	<color name = "bgDark">#555A5F</color>
+</resources>
