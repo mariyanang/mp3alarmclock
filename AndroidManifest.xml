@@ -3,7 +3,7 @@
     package="net.mariyana.mp3alarmclock"
     android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="17"
