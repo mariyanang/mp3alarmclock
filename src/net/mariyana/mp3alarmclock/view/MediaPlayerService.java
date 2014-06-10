@@ -32,7 +32,6 @@ public class MediaPlayerService extends Service {
 			long alarmId = intent.getLongExtra(Alarm.INTENT_ID, -1);
 			playMusicAndShowNotification(alarmId);
 		}
-		// return Service.START_STICKY;
 		return Service.START_REDELIVER_INTENT;
 	}
 

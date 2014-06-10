@@ -60,7 +60,7 @@ public class AlarmsManager {
 		if (delete) {
 			alarmsDbHelper.deleteAlarm(alarmId);
 
-			Toast.makeText(context, "Alarm deleted", Toast.LENGTH_LONG).show();
+			Toast.makeText(context, "Alarm deleted", Toast.LENGTH_SHORT).show();
 		}
 	}
 
@@ -157,12 +157,6 @@ public class AlarmsManager {
 		}
 		return 0;
 	}
-
-	// private String getDateString(Calendar calendar) {
-	// SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-	// Date today = calendar.getTime();
-	// return df.format(today);
-	// }
 
 	public void setAlarm(Alarm alarm, boolean active) {
 		setAlarm(alarm, active, true);

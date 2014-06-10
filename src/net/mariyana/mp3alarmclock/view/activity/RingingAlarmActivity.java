@@ -1,9 +1,6 @@
 package net.mariyana.mp3alarmclock.view.activity;
 
 import net.mariyana.mp3alarmclock.R;
-import net.mariyana.mp3alarmclock.R.drawable;
-import net.mariyana.mp3alarmclock.R.id;
-import net.mariyana.mp3alarmclock.R.layout;
 import net.mariyana.mp3alarmclock.controller.AlarmsManager;
 import net.mariyana.mp3alarmclock.model.Alarm;
 import net.mariyana.mp3alarmclock.view.MediaPlayerService;
@@ -40,8 +37,6 @@ public class RingingAlarmActivity extends Activity {
 
 		setContentView(R.layout.ringing_alarm_activity);
 
-		// player = new MusicPlayer();
-
 		long alarmId = getIntent().getLongExtra(Alarm.INTENT_ID, -1);
 		alarmsManger = new AlarmsManager(this);
 		final Alarm alarm = alarmsManger.getAlarmById(alarmId);
@@ -58,7 +53,6 @@ public class RingingAlarmActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
-				// player.onPlay(false);
 				Intent intent = new Intent(getApplicationContext(),
 						MediaPlayerService.class);
 				intent.putExtra(Alarm.INTENT_ID, alarm.getId());
@@ -104,7 +98,6 @@ public class RingingAlarmActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
-				// player.onPlay(false);
 				Intent intent = new Intent(getApplicationContext(),
 						MediaPlayerService.class);
 				stopService(intent);
@@ -136,7 +129,6 @@ public class RingingAlarmActivity extends Activity {
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
-		// player.onPlay(false);
 		finish();
 	}
 
@@ -150,8 +142,6 @@ public class RingingAlarmActivity extends Activity {
 	protected void onPause() {
 		super.onPause();
 		alarmsManger.close();
-
-		// player.close();
 		finish();
 	}
 }

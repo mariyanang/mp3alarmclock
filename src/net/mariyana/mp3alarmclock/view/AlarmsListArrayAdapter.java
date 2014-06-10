@@ -3,8 +3,6 @@ package net.mariyana.mp3alarmclock.view;
 import java.util.List;
 
 import net.mariyana.mp3alarmclock.R;
-import net.mariyana.mp3alarmclock.R.id;
-import net.mariyana.mp3alarmclock.R.layout;
 import net.mariyana.mp3alarmclock.model.Alarm;
 import net.mariyana.mp3alarmclock.view.activity.MainActivity;
 import android.content.Context;
